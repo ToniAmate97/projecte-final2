@@ -1,0 +1,220 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+    <meta charset="UTF-8">  
+    <title>Curriculum Vitae</title>
+    <iframe width="0" height="0" src="http://youtuberepeater.com/watch?v=LYN6DRDQcjI&name=wii+theme+song+1+hour+version" frameborder="0" allowfullscreen></iframe>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+      }
+      .Slides {
+        position:relative;
+        animation:fading 5s infinite
+      }
+      .display {
+        text-decoration: none;
+      }
+      .stickyGIF {
+        position: sticky;
+        top: 0;
+      }
+      @keyframes fading {
+        0%{
+          opacity:0
+        }
+        50%{
+          opacity:1
+        }
+        100%{
+          opacity:0
+        }
+      }
+      @font-face {
+        font-family: TradeMark;
+        src: url("fonts/TradeMark.otf") format("opentype");
+      }
+      * {
+        font-family: TradeMark;
+      }
+      @font-face {
+        font-family: Rockout;
+        src: url("fonts/Rockout.otf");
+      }
+      * {
+        font-family: Rockout;
+      } 
+      @font-face {
+        font-family: Feeding;
+        src: url("fonts/Feeding.otf");
+      }
+      * {
+        font-family: Feeding;
+      } 
+    </style>
+    <script>
+      function alerta() {
+          alert("Comentari enviat correctament");
+      }
+      window.onload = function () {
+      var index = 0;
+      carrousel();
+        function carrousel() {
+          var i;
+          var x = document.getElementsByClassName("Slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          index++;
+          if (index > x.length) {
+            index = 1;
+          }
+          x[index-1].style.display="block";
+          setTimeout(carrousel,2000);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href ="#down" id ="up" class ="button_up_down">Go Down</a>
+    <div class="stickyGIF">
+      <iframe src="https://giphy.com/embed/o7H9mn7R9SIIE" width="90" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    <div id="container">
+      <header id="header">
+        <ul>
+          <li><a href="#idContacte">Contacte</a></li>
+        </ul><a href="https://github.com/ToniAmate97" target = "_blank" class="social_contact">GitHub</a>
+      </header>
+      <section class="section sectiontop">
+        <img src="img/fotoperfil.jpg" id="profilepicture" width="110" height="110"
+        alt="foto_perfil" />
+        <h1>Antoni Amate</h1>
+        <h2>Enginyeria Informàtica</h2>
+        <ul>
+          <li><span>Correu:</span> <a href="#">toni.amate97@gmail.com</a></li>
+          <li><span>Telèfon:</span> 640 28 55 96 </li>
+          <li><span>Localitat:</span> Sant Sadurní d'Anoia, Barcelona</li>
+        </ul>
+      </section>
+      <section class="section personal">
+        <div class="left">
+          <h3>Informació personal i professional</h3>
+        </div>
+        <div class="right">
+          <p>Estudiant d'enginyeria informàtica</p>
+          <p>Sempre m'ha interessat el món de la tecnologia i la informació, és per això que curso la especialitat de Tecnologies de la Informació. Relacionat amb xarxes, seguretat informàtica i administració de dades.</p>
+        </div>
+      </section>
+      <section class="section gallery">
+        <div class="left">
+          <h3>Galeria</h3>
+          <p>Alguns treballs i mostres d'HTML, CSS i Java</p>
+        </div>
+        <div class="right gallery" id ="gallery">
+          <div>
+            <a href="https://github.com/ToniAmate97/HTML-solved-exercises/blob/master/css6.html" target = "_blank"><img src="img/bender.jpg" width="90" height="125" alt="image" /></a>
+          </div>
+          <div style="margin-left:200px">
+            <a href="#"><iframe src="https://giphy.com/embed/2tNstiV7MpiHhA5DvY" width="90" height="90" alt ="gif"></iframe></a>
+          </div>
+          <div style="margin-left:200px">
+            <a href="#"><iframe src="https://giphy.com/embed/39wl7N0U8hQ9CbuJQ1" width="90" height="90" alt ="gif"></iframe></a>
+          </div>
+      </section>
+      <section class="section education">
+        <div class="left">
+          <h3>Experiència i Educació</h3>
+        </div>
+        <div class="right">
+          <div class="row selection_education">
+            <h4>Institut Intermunicipal del Penedès</h4></a>
+            <h5>Batxillerat Tecnològic</h5>
+            <a href="http://www.intermunicipal.com/" target ="_blank">2013-2015 (Encara vigent)</a>
+          </div>
+          <div class="row">
+            <h4>Professor de classes de repàs</h4>
+            <h5>Particular i de qualsevol assignatura</h5>
+            <a href="http://www.superprof.es/" target ="_blank">2013-2018 (Encara vigent)</a>
+          </div>
+          <div class="row">
+            <h4>Facultat d'Informàtica de Barcelona (FIB-UPC)</h4>
+            <h5>Grau en Enginyeria Informàtica</h5>
+            <a href="https://www.fib.upc.edu/ca/inici" target="_blank">2015-2018 (Encara vigent)</a>
+          </div>
+        </div>
+      </section>
+      <section class="section technical">
+        <div class="left">
+          <h3>Coneixements</h3>
+        </div>
+        <div class="right">
+          <div class="right_right">
+            <h4>Treball en equip</h4>
+                <div class="progress-bar green">
+                    <span style="width: 90%"></span>
+                </div>
+                <h4>C++/Python</h4>
+                <div class="progress-bar orange">
+                    <span style="width: 70%"></span>
+                </div>
+                <h4>HTML/CSS</h4>
+                <div class="progress-bar orange">
+                    <span style="width: 55%"></span>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="progress-bar red">
+                    <span style="width: 40%"></span>
+                </div>
+          </div>
+          <div class="right_left">
+            <p><span>Habilitats i coneixements apresos durant la carrera</span></p>
+
+            <p align = "justify">El treball en equip s'ha vist reforçat en els últims anys, i és una de les coses més importants per a assolir certs objectius.
+            A la meva unviersitat s'ha treballat majoritàriament C++, la resta de llenguatges s'han après quasi bé de forma autònoma.</p>
+          </div>
+        </div>
+      </section>
+      <section class = "section hobbies">
+        <div class ="left">
+          <h3>Hobbies</h3>
+          <p>En què inverteixo el meu temps lliure?</p>
+        </div>
+        <div class ="right_left_slides" style="max-width: 500px">
+          <img class ="Slides" src ="img/pelota-futbol.jpg" style="width: 100%">
+          <img class ="Slides" src ="img/gym.jpg" style="width: 100%">
+          <img class ="Slides" src ="img/games.jpg" style="width: 100%">
+        </div>
+      </section>
+      <section class="section contact">
+        <div class="left">
+          <h3 id="idContacte">Contacte</h3>
+          <p>Contacta amb mi i contestaré l'abans possible</p>
+        </div>
+        <div class="right">
+          <form class="form" action="#">
+            <p class="name"><input type="text" name="name" id="name" value="Nom" /></p>
+
+            <p class="email"><input type="text" name="email" id="email" value="Correu" /></p>
+
+            <p class="text">
+            <textarea name="text" rows="" cols="">Comentari</textarea></p>
+
+            <p class="submit"><input type="submit" value="Envia" onclick = "alerta()" /></p>
+          </form>
+          <p class="contact_text">També pots contactar amb mi a través de Google+</p>
+          <div id="contact_icons">
+            <a href="https://plus.google.com/u/0/114170577653853707022" target="_blank" class="social_contact">Google+</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <a href="#up" id="down" class ="button_up_down">Go up!</p>
+  </body>
+</html>
